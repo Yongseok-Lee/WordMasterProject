@@ -26,6 +26,7 @@ public class WordManager
                 case 0: System.out.print("\n프로그램이 종료되었습니다."); run = false; break;
                 case 1: wordCRUD.listAll(); break;
                 case 4: wordCRUD.add(); break;
+                case 5: wordCRUD.update(); break;
                 default: System.out.println("\n번호가 올바르지 않습니다. 다시 입력하세요.");
             }
         }

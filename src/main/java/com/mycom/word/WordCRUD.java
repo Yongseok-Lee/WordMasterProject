@@ -29,9 +29,22 @@ public class WordCRUD implements ICRUD
     }
 
     @Override
-    public int update(Object obj)
+    public void update()
     {
-        return 0;
+        System.out.print("\n>>> 수정할 단어 검색: ");
+        String keyword = scanner.next();
+
+        ArrayList<Integer> matched = this.listAll(keyword);
+
+        System.out.print("\n>>> 수정할 번호 선택: ");
+        int id = scanner.nextInt();
+        scanner.nextLine();
+
+        System.out.print(">>> 수정할 뜻 입력: ");
+        String newMeaning = scanner.nextLine();
+
+        list.get(matched.get(id - 1)).setMeaning(newMeaning);
+        System.out.println("\n단어의 뜻이 수정되었습니다.");
     }
 
     @Override
@@ -57,5 +70,25 @@ public class WordCRUD implements ICRUD
         }
 
         System.out.println("--------------------");
+    }
+
+    @Override
+    public ArrayList<Integer> listAll(String keyword)
+    {
+        ArrayList<Integer> matched = new ArrayList<>();
+
+        System.out.println("\n--------------------");
+
+        for (int i = 0, j = 0; i < list.size(); ++i)
+        {
+            if (!list.get(i).getWord().contains(keyword)) continue;
+
+            System.out.println(++j + " " + list.get(i).toString());
+            matched.add(i);
+        }
+
+        System.out.println("--------------------");
+
+        return matched;
     }
 }

@@ -1,10 +1,13 @@
 package com.mycom.word;
 
+import java.util.ArrayList;
+
 public interface ICRUD
 {
     void add();
-    int update(Object obj);
+    void update();
     int delete(Object obj);
     void selectOne(int id);
     void listAll();
+    ArrayList<Integer> listAll(String keyword);
 }

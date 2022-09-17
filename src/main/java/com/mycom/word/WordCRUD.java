@@ -31,20 +31,42 @@ public class WordCRUD implements ICRUD
     @Override
     public void update()
     {
-        System.out.print("\n>>> 수정할 단어 검색: ");
-        String keyword = scanner.next();
+        if (list.size() == 0)
+        {
+            System.out.println("\n단어장에 단어가 없습니다. 새 단어를 추가하세요.");
+            return;
+        }
 
-        ArrayList<Integer> matched = this.listAll(keyword);
+        ArrayList<Integer> matched = new ArrayList<>();
 
-        System.out.print("\n>>> 수정할 번호 선택: ");
-        int id = scanner.nextInt();
-        scanner.nextLine();
+        while (matched.size() == 0)
+        {
+            System.out.print("\n>>> 수정할 단어 검색: ");
+            String keyword = scanner.next();
 
-        System.out.print(">>> 수정할 뜻 입력: ");
-        String newMeaning = scanner.nextLine();
+            matched = this.listAll(keyword);
+        }
 
-        list.get(matched.get(id - 1)).setMeaning(newMeaning);
-        System.out.println("\n단어의 뜻이 수정되었습니다.");
+        while (true)
+        {
+            try
+            {
+                System.out.print("\n>>> 수정할 번호 선택: ");
+                int id = scanner.nextInt();
+                scanner.nextLine();
+
+                System.out.print(">>> 수정할 뜻 입력: ");
+                String newMeaning = scanner.nextLine();
+
+                list.get(matched.get(id - 1)).setMeaning(newMeaning);
+                System.out.println("\n단어의 뜻이 수정되었습니다.");
+                break;
+            }
+            catch (Exception exception)
+            {
+                System.out.println("\n번호가 올바르지 않습니다. 다시 입력하세요.");
+            }
+        }
     }
 
     @Override

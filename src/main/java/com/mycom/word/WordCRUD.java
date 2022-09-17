@@ -17,15 +17,28 @@ public class WordCRUD implements ICRUD
     @Override
     public void add()
     {
-        System.out.print("\n>>> 난이도(1 ~ 3) & 새 단어 입력: ");
-        int level = scanner.nextInt();
-        String word = scanner.nextLine();
+        while (true)
+        {
+            try
+            {
+                System.out.print("\n>>> 난이도(1 ~ 3) & 새 단어 입력: ");
+                int level = scanner.nextInt();
+                String word = scanner.next();
+                scanner.nextLine();
 
-        System.out.print(">>> 새 단어의 뜻 입력: ");
-        String meaning = scanner.nextLine();
+                System.out.print(">>> 새 단어의 뜻 입력: ");
+                String meaning = scanner.nextLine();
 
-        this.list.add(new Word(0, level, word, meaning));
-        System.out.println("\n새 단어가 단어장에 추가되었습니다.");
+                this.list.add(new Word(0, level, word, meaning));
+                System.out.println("\n새 단어가 단어장에 추가되었습니다.");
+                break;
+            }
+            catch (Exception exception)
+            {
+                scanner.nextLine();
+                System.out.println("\n올바른 형식이 아닙니다. 다시 입력하세요.");
+            }
+        }
     }
 
     @Override
@@ -64,6 +77,7 @@ public class WordCRUD implements ICRUD
             }
             catch (Exception exception)
             {
+                scanner.nextLine();
                 System.out.println("\n번호가 올바르지 않습니다. 다시 입력하세요.");
             }
         }

@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46c672f-afe3-458d-bec8-96fd3ac663bc" name="Changes" comment="Add exception handling">
+    <list default="true" id="c46c672f-afe3-458d-bec8-96fd3ac663bc" name="Changes" comment="Add exception handling to listAll()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycom/word/WordCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycom/word/WordCRUD.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +73,7 @@
       <workItem from="1662484930882" duration="4861000" />
       <workItem from="1662652357728" duration="9754000" />
       <workItem from="1663112243085" duration="7999000" />
-      <workItem from="1663269771294" duration="4923000" />
+      <workItem from="1663269771294" duration="6788000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1662103048766</created>
@@ -123,7 +124,21 @@
       <option name="project" value="LOCAL" />
       <updated>1663420710286</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add exception handling">
+      <created>1663420806685</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1663420806686</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Add exception handling to listAll()">
+      <created>1663420919445</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1663420919445</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +164,8 @@
     <MESSAGE value="Replace switch statement with enhanced switch" />
     <MESSAGE value="Replace concatenation with text block" />
     <MESSAGE value="Add exception handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add exception handling" />
+    <MESSAGE value="Add exception handling to listAll()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add exception handling to listAll()" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

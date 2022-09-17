@@ -84,6 +84,12 @@ public class WordCRUD implements ICRUD
     @Override
     public void listAll()
     {
+        if (list.size() == 0)
+        {
+            System.out.println("\n단어장에 단어가 없습니다. 새 단어를 추가하세요.");
+            return;
+        }
+
         System.out.println("\n--------------------");
 
         for (int i = 0; i < list.size(); ++i)
@@ -107,6 +113,11 @@ public class WordCRUD implements ICRUD
 
             System.out.println(++j + " " + list.get(i).toString());
             matched.add(i);
+        }
+
+        if (matched.size() == 0)
+        {
+            System.out.println("매칭된 단어가 없습니다. 키워드를 다시 입력하세요.");
         }
 
         System.out.println("--------------------");

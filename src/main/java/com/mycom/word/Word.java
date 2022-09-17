@@ -64,4 +64,9 @@ public class Word
 
         return String.format("%-3s %16s %s", strLevel, word, meaning);
     }
+
+    public String toFileString()
+    {
+        return this.level + "|" + this.word + "|" + this.meaning;
+    }
 }

@@ -15,9 +15,10 @@ public class WordManager
 
     public void start()
     {
-        boolean run = true;
-
         System.out.println("*** 영단어 마스터 ***");
+
+        wordCRUD.loadFile();
+        boolean run = true;
 
         while (run)
         {
@@ -31,8 +32,12 @@ public class WordManager
                         run = false;
                     }
                     case 1 -> wordCRUD.listAll();
+                    case 2 -> wordCRUD.searchLevel();
+                    case 3 -> wordCRUD.searchWord();
                     case 4 -> wordCRUD.add();
                     case 5 -> wordCRUD.update();
+                    case 6 -> wordCRUD.delete();
+                    case 7 -> wordCRUD.saveFile();
                     default -> System.out.println("\n번호가 올바르지 않습니다. 다시 입력하세요.");
                 }
             }

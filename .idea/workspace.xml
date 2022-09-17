@@ -4,10 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c46c672f-afe3-458d-bec8-96fd3ac663bc" name="Changes" comment="Add exception handling to listAll()">
+    <list default="true" id="c46c672f-afe3-458d-bec8-96fd3ac663bc" name="Changes" comment="Add more exception handling to add()">
+      <change afterPath="$PROJECT_DIR$/Dictionary.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/ICRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/ICRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/Word.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/Word.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordCRUD.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/mycom/word/WordManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycom/word/ICRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycom/word/ICRUD.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/mycom/word/WordCRUD.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycom/word/WordCRUD.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/mycom/word/WordManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/mycom/word/WordManager.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +79,7 @@
       <workItem from="1662484930882" duration="4861000" />
       <workItem from="1662652357728" duration="9754000" />
       <workItem from="1663112243085" duration="7999000" />
-      <workItem from="1663269771294" duration="6788000" />
+      <workItem from="1663269771294" duration="10030000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1662103048766</created>
@@ -138,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663420919445</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Add more exception handling to add()">
+      <created>1663422697440</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1663422697440</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +178,8 @@
     <MESSAGE value="Replace concatenation with text block" />
     <MESSAGE value="Add exception handling" />
     <MESSAGE value="Add exception handling to listAll()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add exception handling to listAll()" />
+    <MESSAGE value="Add more exception handling to add()" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add more exception handling to add()" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

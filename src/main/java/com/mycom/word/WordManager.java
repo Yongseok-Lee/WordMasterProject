@@ -21,22 +21,30 @@ public class WordManager
 
         while (run)
         {
-            switch (selectMenu())
+            try
             {
-                case 0 ->
+                switch (selectMenu())
                 {
-                    System.out.print("\n프로그램이 종료되었습니다.");
-                    run = false;
+                    case 0 ->
+                    {
+                        System.out.print("\n프로그램이 종료되었습니다.");
+                        run = false;
+                    }
+                    case 1 -> wordCRUD.listAll();
+                    case 4 -> wordCRUD.add();
+                    case 5 -> wordCRUD.update();
+                    default -> System.out.println("\n번호가 올바르지 않습니다. 다시 입력하세요.");
                 }
-                case 1 -> wordCRUD.listAll();
-                case 4 -> wordCRUD.add();
-                case 5 -> wordCRUD.update();
-                default -> System.out.println("\n번호가 올바르지 않습니다. 다시 입력하세요.");
+            }
+            catch (Exception exception)
+            {
+                scanner.nextLine();
+                System.out.println("\n번호가 올바르지 않습니다. 다시 입력하세요.");
             }
         }
     }
 
-    private int selectMenu()
+    private int selectMenu() throws Exception
     {
         System.out.print(
             """
